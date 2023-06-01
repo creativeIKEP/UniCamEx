@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>22F66</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Extension</string>
+	<key>CFBundleExecutable</key>
+	<string>jp.ikep.UniCamEx.Extension</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.ikep.UniCamEx.Extension</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>jp.ikep.UniCamEx.Extension</string>
+	<key>CFBundlePackageType</key>
+	<string>SYSX</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CMIOExtension</key>
+	<dict>
+		<key>CMIOExtensionMachServiceName</key>
+		<string>4L4PLF7J37.jp.ikep.UniCamEx.Extension</string>
+	</dict>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string></string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>13.3</string>
+	<key>DTSDKBuild</key>
+	<string>22E245</string>
+	<key>DTSDKName</key>
+	<string>macosx13.3</string>
+	<key>DTXcode</key>
+	<string>1430</string>
+	<key>DTXcodeBuild</key>
+	<string>14E222b</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.3</string>
+	<key>NSSystemExtensionUsageDescription</key>
+	<string></string>
+</dict>
+</plist>
