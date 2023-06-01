@@ -1,0 +1,18 @@
+{
+    "name": "UniMacCameraEx.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:abd0983879a76104092bd43f426472fc"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

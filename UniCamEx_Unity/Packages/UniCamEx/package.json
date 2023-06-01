@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "IKEP",
+    "url": "https://ikep.jp"
+  },
+  "name": "jp.ikep.unicamex",
+  "displayName": "UniCamEx",
+  "description": "MacOS virtual camera for using Apple's camera extension with Core Media I/O.",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "keywords": [
+    "unity",
+    "Virtual Camera"
+  ],
+  "dependencies": {
+    "com.unity.scripting.python": "6.0.1"
+  },
+  "license": "MIT",
+  "repository": "github:creativeIKEP/UniCamEx"
+}
