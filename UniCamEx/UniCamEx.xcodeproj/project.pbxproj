@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460990A02A28C08F00808200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609909F2A28C08F00808200 /* AppDelegate.swift */; };
+		460990A22A28C08F00808200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990A12A28C08F00808200 /* ViewController.swift */; };
+		460990A42A28C09000808200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460990A32A28C09000808200 /* Assets.xcassets */; };
+		460990A72A28C09000808200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460990A52A28C09000808200 /* Main.storyboard */; };
+		460990AE2A28C38F00808200 /* UniCamExInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990AD2A28C38F00808200 /* UniCamExInstaller.swift */; };
+		460990AF2A28C45600808200 /* UniCamExInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990AD2A28C38F00808200 /* UniCamExInstaller.swift */; };
+		460990B02A28C47100808200 /* UniCamExInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990AD2A28C38F00808200 /* UniCamExInstaller.swift */; };
+		460990B12A28C52A00808200 /* jp.ikep.UniCamEx.Extension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 466E69412A278F3500847F6A /* jp.ikep.UniCamEx.Extension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		466E69382A278D5400847F6A /* CoreMediaIOUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB27792A2782F700220B40 /* CoreMediaIOUtil.swift */; };
 		466E69392A278D5400847F6A /* MtlTextureToSampleBufferConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB277B2A2782F700220B40 /* MtlTextureToSampleBufferConverter.swift */; };
 		466E693A2A278D5400847F6A /* UniCamEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB277A2A2782F700220B40 /* UniCamEx.swift */; };
@@ -30,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		460990B22A28C52A00808200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46BB274F2A27825B00220B40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 466E69402A278F3500847F6A;
+			remoteInfo = Extension;
+		};
 		466E69492A278F3500847F6A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46BB274F2A27825B00220B40 /* Project object */;
@@ -40,6 +55,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		460990B42A28C52A00808200 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				460990B12A28C52A00808200 /* jp.ikep.UniCamEx.Extension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466E694F2A278F3500847F6A /* Embed System Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +80,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4609909D2A28C08F00808200 /* UniCamExExtensionInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniCamExExtensionInstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4609909F2A28C08F00808200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		460990A12A28C08F00808200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		460990A32A28C09000808200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		460990A62A28C09000808200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		460990A82A28C09000808200 /* UniCamExExtensionInstaller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniCamExExtensionInstaller.entitlements; sourceTree = "<group>"; };
+		460990AD2A28C38F00808200 /* UniCamExInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniCamExInstaller.swift; sourceTree = "<group>"; };
 		466E69412A278F3500847F6A /* jp.ikep.UniCamEx.Extension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = jp.ikep.UniCamEx.Extension.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
 		466E69472A278F3500847F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466E69482A278F3500847F6A /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
@@ -79,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4609909A2A28C08F00808200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466E693E2A278F3500847F6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +143,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4609909E2A28C08F00808200 /* UniCamExExtensionInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				4609909F2A28C08F00808200 /* AppDelegate.swift */,
+				460990A12A28C08F00808200 /* ViewController.swift */,
+				460990A32A28C09000808200 /* Assets.xcassets */,
+				460990A52A28C09000808200 /* Main.storyboard */,
+				460990A82A28C09000808200 /* UniCamExExtensionInstaller.entitlements */,
+			);
+			path = UniCamExExtensionInstaller;
+			sourceTree = "<group>";
+		};
 		466E69422A278F3500847F6A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +175,7 @@
 				46BB27782A2782D000220B40 /* UniCamExBundle */,
 				46BB27592A27825B00220B40 /* UniCamEx */,
 				466E69422A278F3500847F6A /* Extension */,
+				4609909E2A28C08F00808200 /* UniCamExExtensionInstaller */,
 				46BB27582A27825B00220B40 /* Products */,
 				46BB27732A27828800220B40 /* Frameworks */,
 			);
@@ -134,6 +187,7 @@
 				46BB27572A27825B00220B40 /* UniCamEx.app */,
 				46BB276F2A27827A00220B40 /* UniCamExBundle.bundle */,
 				466E69412A278F3500847F6A /* jp.ikep.UniCamEx.Extension.systemextension */,
+				4609909D2A28C08F00808200 /* UniCamExExtensionInstaller.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +221,7 @@
 				46BB277A2A2782F700220B40 /* UniCamEx.swift */,
 				46BB277D2A2782F700220B40 /* UniCamExBridge.mm */,
 				46BB277C2A2782F700220B40 /* UniCamExModel.swift */,
+				460990AD2A28C38F00808200 /* UniCamExInstaller.swift */,
 			);
 			path = UniCamExBundle;
 			sourceTree = "<group>";
@@ -174,6 +229,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4609909C2A28C08F00808200 /* UniCamExExtensionInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460990AB2A28C09000808200 /* Build configuration list for PBXNativeTarget "UniCamExExtensionInstaller" */;
+			buildPhases = (
+				460990992A28C08F00808200 /* Sources */,
+				4609909A2A28C08F00808200 /* Frameworks */,
+				4609909B2A28C08F00808200 /* Resources */,
+				460990B42A28C52A00808200 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				460990B32A28C52A00808200 /* PBXTargetDependency */,
+			);
+			name = UniCamExExtensionInstaller;
+			productName = UniCamExExtensionInstaller;
+			productReference = 4609909D2A28C08F00808200 /* UniCamExExtensionInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
 		466E69402A278F3500847F6A /* Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 466E694C2A278F3500847F6A /* Build configuration list for PBXNativeTarget "Extension" */;
@@ -237,6 +311,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4609909C2A28C08F00808200 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					466E69402A278F3500847F6A = {
 						CreatedOnToolsVersion = 14.3;
 						LastSwiftMigration = 1430;
@@ -266,11 +343,21 @@
 				46BB27562A27825B00220B40 /* UniCamEx */,
 				46BB276E2A27827A00220B40 /* UniCamExBundle */,
 				466E69402A278F3500847F6A /* Extension */,
+				4609909C2A28C08F00808200 /* UniCamExExtensionInstaller */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4609909B2A28C08F00808200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460990A42A28C09000808200 /* Assets.xcassets in Resources */,
+				460990A72A28C09000808200 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466E693F2A278F3500847F6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +385,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		460990992A28C08F00808200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460990B02A28C47100808200 /* UniCamExInstaller.swift in Sources */,
+				460990A22A28C08F00808200 /* ViewController.swift in Sources */,
+				460990A02A28C08F00808200 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		466E693D2A278F3500847F6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460990AF2A28C45600808200 /* UniCamExInstaller.swift in Sources */,
 				466E69382A278D5400847F6A /* CoreMediaIOUtil.swift in Sources */,
 				466E69392A278D5400847F6A /* MtlTextureToSampleBufferConverter.swift in Sources */,
 				466E693A2A278D5400847F6A /* UniCamEx.swift in Sources */,
@@ -329,6 +427,7 @@
 			files = (
 				46BB27802A2782F700220B40 /* MtlTextureToSampleBufferConverter.swift in Sources */,
 				46BB27812A2782F700220B40 /* UniCamExModel.swift in Sources */,
+				460990AE2A28C38F00808200 /* UniCamExInstaller.swift in Sources */,
 				46BB277E2A2782F700220B40 /* CoreMediaIOUtil.swift in Sources */,
 				46BB277F2A2782F700220B40 /* UniCamEx.swift in Sources */,
 				46BB27822A2782F700220B40 /* UniCamExBridge.mm in Sources */,
@@ -338,6 +437,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		460990B32A28C52A00808200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 466E69402A278F3500847F6A /* Extension */;
+			targetProxy = 460990B22A28C52A00808200 /* PBXContainerItemProxy */;
+		};
 		466E694A2A278F3500847F6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 466E69402A278F3500847F6A /* Extension */;
@@ -346,6 +450,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		460990A52A28C09000808200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				460990A62A28C09000808200 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		46BB27622A27825B00220B40 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,13 +469,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		460990A92A28C09000808200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UniCamExExtensionInstaller/UniCamExExtensionInstaller.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ikep.UniCamExExtensionInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		460990AA2A28C09000808200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UniCamExExtensionInstaller/UniCamExExtensionInstaller.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ikep.UniCamExExtensionInstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		466E694D2A278F3500847F6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -395,7 +566,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -661,6 +831,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		460990AB2A28C09000808200 /* Build configuration list for PBXNativeTarget "UniCamExExtensionInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460990A92A28C09000808200 /* Debug */,
+				460990AA2A28C09000808200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		466E694C2A278F3500847F6A /* Build configuration list for PBXNativeTarget "Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
