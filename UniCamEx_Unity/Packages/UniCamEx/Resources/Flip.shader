@@ -31,6 +31,8 @@ Shader "UniCamEx/Flip"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            int _isHorizontalFlip;
+
             #define FLT_EPSILON 1.192092896e-07
 
             float3 PositivePow(float3 base, float3 power)
@@ -57,6 +59,7 @@ Shader "UniCamEx/Flip"
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 uv = i.uv;
+                uv.x = _isHorizontalFlip ? 1.0f - uv.x : uv.x;
                 uv.y = 1.0f - uv.y;
                 fixed4 col = tex2D(_MainTex, uv);
 
