@@ -64,7 +64,7 @@ This repository has the demo that send textures from Unity.
 
 Check a Unity [scene](/UniCamEx_Unity/Assets/Scenes/SampleScene.unity) and [scripts](/UniCamEx_Unity/Assets/Scripts) in the ["/Assets"](/UniCamEx_Unity/Assets) directory.
 
-### Usage for Develop from Unity Editor
+### Usage for Develop send textures from Unity Editor
 #### 1. Send texture from Unity
 Send a Texture with the `UniCamExPlugin.Send` method.
 https://github.com/creativeIKEP/UniCamEx/blob/33b328524d3e5b43c0a954ef2e0a3e64703cd78b/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
@@ -106,7 +106,7 @@ Open exported `.xcodeproj` file with Xcode and sign in with your Apple developer
 
 You must enroll the [Apple Developer Program membership](https://developer.apple.com/programs/) for building the app used System Extension.
 
-You can build an app after sign in with Apple developer account enrolled Apple Developer Program membership.
+You can build an app after sign in with Apple developer account that enrolled Apple Developer Program membership.
 
 #### 4. Run the Builded App
 **Move builded app from build directory to `~/Applications` directory** and run your app.
