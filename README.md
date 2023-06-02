@@ -70,7 +70,7 @@ Send a Texture with the `UniCamExPlugin.Send` method.
 https://github.com/creativeIKEP/UniCamEx/blob/v1.0.0/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
 
 #### 2. Install an Auxiliary app for UniCamEx
-Download installer(`UniCamExExtensionInstaller.pkg`) for auxiliary app of UniCamEx from [release page](https://github.com/creativeIKEP/UniCamEx/releases/latest) and execute it.
+Download `UniCamExExtensionInstaller.zip` for auxiliary app of UniCamEx from [release page](https://github.com/creativeIKEP/UniCamEx/releases/latest) and Open the zip file.
 
 **Move `UniCamExExtensionInstaller.app` to `~/Applications` directory** and run `UniCamExExtensionInstaller.app`.
 
