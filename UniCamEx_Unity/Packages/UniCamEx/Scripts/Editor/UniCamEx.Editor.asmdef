@@ -1,5 +1,5 @@
 {
-    "name": "UniMacCameraEx.Editor",
+    "name": "UniCamEx.Editor",
     "rootNamespace": "",
     "references": [
         "GUID:abd0983879a76104092bd43f426472fc"
