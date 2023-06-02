@@ -10,7 +10,8 @@
   "unity": "2022.3",
   "keywords": [
     "unity",
-    "Virtual Camera"
+    "Virtual Camera",
+    "Camera Extension"
   ],
   "dependencies": {
     "com.unity.scripting.python": "6.0.1"
