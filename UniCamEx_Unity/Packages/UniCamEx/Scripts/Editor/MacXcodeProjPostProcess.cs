@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.IO;
 using UnityEditor;
 using UnityEditor.Callbacks;
@@ -16,7 +17,7 @@ namespace UniCamEx {
             }
             var isCreateXcodePrjStr = EditorUserBuildSettings.GetPlatformSettings(BuildPipeline.GetBuildTargetName(BuildTarget.StandaloneOSX), "CreateXcodeProject");
             if(isCreateXcodePrjStr != "true") {
-                Debug.LogWarning(
+                UnityEngine.Debug.LogWarning(
                     "Post process build of UniCamEx is canceld.\n" + 
                     "Please turn on 'Create Xcode Project' in the build settings for running post process build of UniCamEx.");
                 return;
@@ -25,7 +26,7 @@ namespace UniCamEx {
             var buildDirInfo = new DirectoryInfo(path);
             var xcodeprojDirs = buildDirInfo.GetDirectories("*.xcodeproj");
             if(xcodeprojDirs.Length <= 0) {
-                Debug.LogWarning(
+                UnityEngine.Debug.LogWarning(
                     "Post process build of UniCamEx is canceld because .xcodeproj file does not found.");
                 return;
             }
@@ -38,6 +39,19 @@ namespace UniCamEx {
             // get post process dst data dir
             var assetDir = new DirectoryInfo(Application.dataPath);
             var dstProstProcessDataDir = new DirectoryInfo(assetDir.Parent.FullName);
+
+            // run `pip install` for python post process
+            string shellPath = Path.Combine(srcPostProcessDataDir.FullName, "pip_install.sh");
+            Process process = new Process();
+            process.StartInfo.FileName = "/bin/bash";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.Arguments = shellPath + " " + dstProstProcessDataDir;
+            process.Start();
+
+            process.WaitForExit();
+            process.Close();
 
             // save files
             var text = "{";
