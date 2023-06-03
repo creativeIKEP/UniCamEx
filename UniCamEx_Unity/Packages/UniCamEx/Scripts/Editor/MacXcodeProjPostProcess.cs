@@ -5,7 +5,7 @@ using UnityEditor.Callbacks;
 using UnityEditor.Scripting.Python;
 using UnityEngine;
 
-namespace UniCamEx {
+namespace UniCamEx.Editor {
     public class MacXcodeProjPostProcess
     {
         [PostProcessBuild (100)]
