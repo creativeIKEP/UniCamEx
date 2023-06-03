@@ -1,5 +1,5 @@
 # UniCamEx
-![UniCamEx_demo](https://github.com/creativeIKEP/UniCamEx/assets/34697515/6820d6b0-cc97-48ff-8c67-acd7b0e15d2f)
+![UniCamEx_demo](https://user-images.githubusercontent.com/34697515/243058841-e07ced4d-5d55-469f-bac0-0a88cdf6a90e.gif)
 
 UniCamEx is a virtual camera for MacOS that can display textures output from Unity.
 
@@ -67,7 +67,7 @@ Check a Unity [scene](https://github.com/creativeIKEP/UniCamEx/blob/v1.0.0/UniCa
 ### Usage for Develop send textures from Unity Editor
 #### 1. Send textures from Unity
 Send textures with the `UniCamExPlugin.Send` method.
-https://github.com/creativeIKEP/UniCamEx/blob/v1.0.0/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
+https://github.com/creativeIKEP/UniCamEx/blob/12ca1446a59fd5d277cb438677d4be9275f23fc3/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
 
 #### 2. Install an Auxiliary app for UniCamEx
 Download `UniCamExExtensionInstaller.zip` for auxiliary app of UniCamEx from [release page](https://github.com/creativeIKEP/UniCamEx/releases/latest) and Open the zip file.
@@ -79,18 +79,18 @@ Push `Install` button.
 
 Allow using System Extension from the Mac setting if the dialog that blocked System Extension is displayed.
 
-<img width="716" alt="Screenshot 2023-06-03 at 0 18 19" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/a70734e5-8de6-4d36-9236-33f8e5c8f6a6">
+<img width="716" alt="UniCamExInstallerDialog" src="https://user-images.githubusercontent.com/34697515/243059855-6055772a-05f2-40e6-aa55-7ae249c787f7.png">
 
-<img width="491" alt="Screenshot 2023-06-03 at 0 18 54" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/b44d28b8-bf32-4c8d-b2ce-c466cf82195f">
+<img width="491" alt="UniCamExInstallerSecurityAllowDialog" src="https://user-images.githubusercontent.com/34697515/243059932-81f921eb-c410-4243-85e6-0a80a6716ab3.png">
 
 Then, you can select the camera named "UniCamEx" with any camera appication and can see textures output from Unity Editor！
 
-<img width="1172" alt="Screenshot 2023-06-03 at 0 41 56" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/11230393-f34c-443a-8b13-01b1a2ba328f">
+<img width="1172" alt="SendTextureFromUnityEditor" src="https://user-images.githubusercontent.com/34697515/243060010-18464804-4efb-4f04-b056-d3f7a9d57f6a.png">
 
 ### Usage for Build the Standalone App
 #### 1. Send textures from Unity
 Send textures with the `UniCamExPlugin.Send` method.
-https://github.com/creativeIKEP/UniCamEx/blob/v1.0.0/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
+https://github.com/creativeIKEP/UniCamEx/blob/12ca1446a59fd5d277cb438677d4be9275f23fc3/UniCamEx_Unity/Assets/Scripts/TextureSender.cs#L1-L13
 
 #### 2. Export Xcode Project with Unity
 **Turn on "Create Xcode Project"** on the Build Settings window.
@@ -101,7 +101,7 @@ Exporting Xcode Project can does the necessary settings for [Camera Extension wi
 Necessary settings for [Camera Extension with Core Media I/O](https://developer.apple.com/documentation/coremediaio/creating_a_camera_extension_with_core_media_i_o) is set with post process build of UniCamEx.
 Post process build of UniCamEx may not work if you did not build from the "Clean Build..." button.
 
-<img width="625" alt="image" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/d0bb9d70-0582-45a2-a768-1a39645bcbec">
+<img width="625" alt="UnityBuildSettings" src="https://user-images.githubusercontent.com/34697515/243060045-7342da5e-dc8f-48ea-b350-a2225d0d26ae.png">
 
 #### 3. Build .app with Xcode
 Open exported `.xcodeproj` file with Xcode and sign in with your Apple developer account.
@@ -115,13 +115,13 @@ You can build an app after sign in with Apple developer account that enrolled Ap
 
 Allow using System Extension from the Mac setting if the dialog that blocked System Extension is displayed.
 
-<img width="255" alt="Screenshot 2023-06-03 at 0 19 32" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/05a01ce7-c88f-4bfc-aefa-74b2fed24877">
+<img width="255" alt="BuildAppDialog" src="https://user-images.githubusercontent.com/34697515/243060103-ffd8a674-a7a4-4b16-958a-a7d4162abdc4.png">
 
-<img width="490" alt="Screenshot 2023-06-03 at 0 20 04" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/d5890ee7-81e9-41c7-9c8d-d9a8848139bb">
+<img width="490" alt="BuildAppSecurityAllowDialog" src="https://user-images.githubusercontent.com/34697515/243060158-d4e271fa-f45a-41cf-ab1d-5aac8d44b9f2.png">
 
 Then, you can select the camera named "UniCamEx" with any camera appication and can see textures output from your app made with Unity！
 
-![image](https://github.com/creativeIKEP/UniCamEx/assets/34697515/a2175ce5-bcd0-43af-9248-bb0167396ae5)
+![SendTextureFromBuildApp](https://user-images.githubusercontent.com/34697515/243060218-c4e6f9fc-ae49-48ed-ad8f-7559c22b6179.png)
 
 
 ## Author
