@@ -1,5 +1,4 @@
 using UnityEngine;
-using UniCamEx;
 
 public class TextureSender : MonoBehaviour
 {
@@ -8,6 +7,8 @@ public class TextureSender : MonoBehaviour
 
     void Update()
     {
-        UniCamExPlugin.Send(sendTexture, isHorizontalFlip);
+#if UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
+      UniCamEx.UniCamExPlugin.Send(sendTexture, isHorizontalFlip);  
+#endif
     }
 }
