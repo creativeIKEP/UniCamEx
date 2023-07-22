@@ -30,7 +30,7 @@ class ExtensionDeviceSource: NSObject, CMIOExtensionDeviceSource {
     init(localizedName: String) {
         
         super.init()
-        let deviceID = UUID(uuidString: "939BF83F-40E8-45D5-9B20-8FBDF536D1A1")!
+        let deviceID = UUID(uuidString: UniCamExConfig.DEVICE_ID)!
         self.device = CMIOExtensionDevice(localizedName: localizedName, deviceID: deviceID, legacyDeviceID: nil, source: self)
         
         let dims = CMVideoDimensions(width: 1920, height: 1080)
@@ -47,10 +47,10 @@ class ExtensionDeviceSource: NSObject, CMIOExtensionDeviceSource {
         let videoStreamFormat = CMIOExtensionStreamFormat.init(formatDescription: _videoDescription, maxFrameDuration: CMTime(value: 1, timescale: Int32(kFrameRate)), minFrameDuration: CMTime(value: 1, timescale: Int32(kFrameRate)), validFrameDurations: nil)
         _bufferAuxAttributes = [kCVPixelBufferPoolAllocationThresholdKey: 5]
         
-        let videoID = UUID(uuidString: "30010C1C-93BF-11D8-8B5B-000A95AF9C6A")!
+        let videoID = UUID(uuidString: UniCamExConfig.VIDEO_ID)!
         _streamSource = ExtensionStreamSource(localizedName: "\(VIRTUAL_CAMERA_NAME).Video", streamID: videoID, streamFormat: videoStreamFormat, device: device)
         
-        let sinkStreamID = UUID(uuidString: "F8BB1C28-BAE8-11D6-9C31-00039315CD46")!
+        let sinkStreamID = UUID(uuidString: UniCamExConfig.SINK_STREAM_ID)!
         _sinkStreamSource = ExtensionSinkStreamSource(localizedName: "\(VIRTUAL_CAMERA_NAME).Video.Sink", streamID: sinkStreamID, streamFormat: videoStreamFormat, device: device)
         do {
             try device.addStream(_streamSource.stream)

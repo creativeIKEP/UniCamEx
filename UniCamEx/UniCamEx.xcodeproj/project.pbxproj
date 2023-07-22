@@ -15,6 +15,8 @@
 		460990AF2A28C45600808200 /* UniCamExInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990AD2A28C38F00808200 /* UniCamExInstaller.swift */; };
 		460990B02A28C47100808200 /* UniCamExInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460990AD2A28C38F00808200 /* UniCamExInstaller.swift */; };
 		460990B12A28C52A00808200 /* jp.ikep.UniCamEx.Extension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = 466E69412A278F3500847F6A /* jp.ikep.UniCamEx.Extension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		464D63AE2A6BB7B700629811 /* UniCamExConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467681282A6BB449007DEA08 /* UniCamExConfig.swift */; };
+		4659C49E2A6BB90900591B46 /* UniCamExConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467681282A6BB449007DEA08 /* UniCamExConfig.swift */; };
 		466E69382A278D5400847F6A /* CoreMediaIOUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB27792A2782F700220B40 /* CoreMediaIOUtil.swift */; };
 		466E69392A278D5400847F6A /* MtlTextureToSampleBufferConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB277B2A2782F700220B40 /* MtlTextureToSampleBufferConverter.swift */; };
 		466E693A2A278D5400847F6A /* UniCamEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB277A2A2782F700220B40 /* UniCamEx.swift */; };
@@ -25,6 +27,8 @@
 		466E69572A27925F00847F6A /* ExtensionSinkStreamSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E69522A27925E00847F6A /* ExtensionSinkStreamSource.swift */; };
 		466E69582A27925F00847F6A /* ExtensionStreamSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E69532A27925F00847F6A /* ExtensionStreamSource.swift */; };
 		466E69592A27925F00847F6A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466E69542A27925F00847F6A /* main.swift */; };
+		467681292A6BB473007DEA08 /* UniCamExConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467681282A6BB449007DEA08 /* UniCamExConfig.swift */; };
+		4676812A2A6BB47D007DEA08 /* UniCamExConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467681282A6BB449007DEA08 /* UniCamExConfig.swift */; };
 		46BB275B2A27825B00220B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB275A2A27825B00220B40 /* AppDelegate.swift */; };
 		46BB275D2A27825B00220B40 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BB275C2A27825B00220B40 /* GameViewController.swift */; };
 		46BB275F2A27825B00220B40 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 46BB275E2A27825B00220B40 /* art.scnassets */; };
@@ -95,6 +99,7 @@
 		466E69522A27925E00847F6A /* ExtensionSinkStreamSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionSinkStreamSource.swift; sourceTree = "<group>"; };
 		466E69532A27925F00847F6A /* ExtensionStreamSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStreamSource.swift; sourceTree = "<group>"; };
 		466E69542A27925F00847F6A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		467681282A6BB449007DEA08 /* UniCamExConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniCamExConfig.swift; sourceTree = "<group>"; };
 		46BB27572A27825B00220B40 /* UniCamEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniCamEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BB275A2A27825B00220B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46BB275C2A27825B00220B40 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +177,7 @@
 		46BB274E2A27825B00220B40 = {
 			isa = PBXGroup;
 			children = (
+				467681282A6BB449007DEA08 /* UniCamExConfig.swift */,
 				46BB27782A2782D000220B40 /* UniCamExBundle */,
 				46BB27592A27825B00220B40 /* UniCamEx */,
 				466E69422A278F3500847F6A /* Extension */,
@@ -389,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4659C49E2A6BB90900591B46 /* UniCamExConfig.swift in Sources */,
 				460990B02A28C47100808200 /* UniCamExInstaller.swift in Sources */,
 				460990A22A28C08F00808200 /* ViewController.swift in Sources */,
 				460990A02A28C08F00808200 /* AppDelegate.swift in Sources */,
@@ -399,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4676812A2A6BB47D007DEA08 /* UniCamExConfig.swift in Sources */,
 				466E69582A27925F00847F6A /* ExtensionStreamSource.swift in Sources */,
 				466E69592A27925F00847F6A /* main.swift in Sources */,
 				466E69552A27925F00847F6A /* ExtensionDeviceSource.swift in Sources */,
@@ -411,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464D63AE2A6BB7B700629811 /* UniCamExConfig.swift in Sources */,
 				460990AF2A28C45600808200 /* UniCamExInstaller.swift in Sources */,
 				466E69382A278D5400847F6A /* CoreMediaIOUtil.swift in Sources */,
 				466E69392A278D5400847F6A /* MtlTextureToSampleBufferConverter.swift in Sources */,
@@ -425,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467681292A6BB473007DEA08 /* UniCamExConfig.swift in Sources */,
 				46BB27802A2782F700220B40 /* MtlTextureToSampleBufferConverter.swift in Sources */,
 				46BB27812A2782F700220B40 /* UniCamExModel.swift in Sources */,
 				460990AE2A28C38F00808200 /* UniCamExInstaller.swift in Sources */,

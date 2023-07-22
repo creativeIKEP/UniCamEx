@@ -2,7 +2,7 @@ import Foundation
 import CoreMediaIO
 
 // For ExtensionProviderSource & ExtensionDeviceSource & ExtensionStreamSource
-let VIRTUAL_CAMERA_NAME = "UniCamEx"
+let VIRTUAL_CAMERA_NAME = UniCamExConfig.VIRTUAL_CAMERA_NAME
 let kWhiteStripeHeight: Int = 10
 let kFrameRate: Int = 60
 
