@@ -100,6 +100,7 @@ Copy `UniCamEx/UniCamEx_Unity/Packages/UniCamEx` directory to `<Your Unity Proje
 1. Open `UniCamEx/UniCamEx/UniCamEx.xcodeproj`.
 2. Change to your custom Bundle Identifier in `Extension` target, and sign in with your Apple developer account.
 <img width="671" alt="3-2" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/b4d37c9a-1fb8-4b75-938d-f5081e58f432">
+
 3. Change to your custom configuration in  `UniCamEx/UniCamEx/UniCamEx/UniCamExConfig.swift`.
 4. Set `Build Configuration` to `Release`, and build `Extension` and `UniCamExBundle` in targets.
 <img width="814" alt="3-4" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/80939423-c129-4140-82ca-5c14fd7e706d">
@@ -107,10 +108,9 @@ Copy `UniCamEx/UniCamEx_Unity/Packages/UniCamEx` directory to `<Your Unity Proje
 #### 4. Integrate Your Custom Built Items to Unity.
 1. Replace from `<Your Unity Project>/Packages/UniCamEx/PostProcessData~/jp.ikep.UniCamEx.Extension.systemextension` to your built `.systemextension`.
 2. Replace from `<Your Unity Project>/Packages/UniCamEx/Plugins/macOS/UniCamExBundle.bundle` to your built `UniCamExBundle.bundle`.
-3. Rewrite from `jp.ikep.UniCamEx.Extension.systemextension` to your built `.systemextension` file name in `<Your Unity Project>/Packages/UniCamEx/Scripts/Editor/MacXcodeProjPostProcess.cs` and `<Your Unity Project>/Packages/UniCamEx/PostProcessData~/PostprocessBuild.py`.
-TODO: コード書き換え箇所のリンクをつける
+3. Rewrite from `jp.ikep.UniCamEx.Extension.systemextension` to your built `.systemextension` file name in [`<Your Unity Project>/Packages/UniCamEx/Scripts/Editor/MacXcodeProjPostProcess.cs`](https://github.com/creativeIKEP/UniCamEx/blob/v1.1.0/UniCamEx_Unity/Packages/UniCamEx/Scripts/Editor/MacXcodeProjPostProcess.cs#L11-L12) and [`<Your Unity Project>/Packages/UniCamEx/PostProcessData~/PostprocessBuild.py`](https://github.com/creativeIKEP/UniCamEx/blob/v1.1.0/UniCamEx_Unity/Packages/UniCamEx/PostProcessData~/PostprocessBuild.py#L8-L9).
 
-#### 5. Coding Send textures from Unity
+#### 5. Coding for Send textures from Unity
 You can send camera rendered images with adding a `UniCamExSender` component to camera in your scenes.
 Also, you can send textures using the `UniCamExPlugin.Send` method.
 
