@@ -8,6 +8,9 @@ using UnityEngine;
 namespace UniCamEx.Editor {
     public class MacXcodeProjPostProcess
     {
+        // You must change your systemextension Bundle Identifier.
+        private static string extensionBundleID = "jp.ikep.UniCamEx.Extension.systemextension";
+
         [PostProcessBuild (100)]
         public static void OnPostProcessBuild(BuildTarget buildTarget, string path)
         {
@@ -59,7 +62,7 @@ namespace UniCamEx.Editor {
             text += "\"buildDirPath\": \"" + buildDirInfo.FullName + "\",";
             text += "\"xcodeProjPath\": \"" + xcodeprojDirs[0].FullName + "\",";
             text += "\"entitlementsPath\": \"" + Path.Combine(srcPostProcessDataDir.FullName, "UniCamEx.entitlements") + "\",";
-            text += "\"systemextensionextensionPath\": \"" + Path.Combine(srcPostProcessDataDir.FullName, "jp.ikep.UniCamEx.Extension.systemextension") + "\"";
+            text += "\"systemextensionextensionPath\": \"" + Path.Combine(srcPostProcessDataDir.FullName, extensionBundleID) + "\"";
             text += "}";
             File.WriteAllText(Path.Combine(dstProstProcessDataDir.FullName, "UniCamExPostProcessData.json"), text);
 
