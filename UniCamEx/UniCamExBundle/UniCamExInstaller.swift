@@ -4,16 +4,15 @@ import SystemExtensions
 
 class UniCamExInstaller: NSObject {
     private (set) public var isInstalled: Bool = false
-    private let extID: String = "jp.ikep.UniCamEx.Extension"
     
     public func install() {
-        let activationRequest = OSSystemExtensionRequest.activationRequest(forExtensionWithIdentifier: extID, queue: .main)
+        let activationRequest = OSSystemExtensionRequest.activationRequest(forExtensionWithIdentifier: UniCamExConfig.CAMERA_EXTENSION_ID, queue: .main)
         activationRequest.delegate = self
         OSSystemExtensionManager.shared.submitRequest(activationRequest)
     }
     
     public func uninstall() {
-        let activationRequest = OSSystemExtensionRequest.deactivationRequest(forExtensionWithIdentifier: extID, queue: .main)
+        let activationRequest = OSSystemExtensionRequest.deactivationRequest(forExtensionWithIdentifier: UniCamExConfig.CAMERA_EXTENSION_ID, queue: .main)
         activationRequest.delegate = self
         OSSystemExtensionManager.shared.submitRequest(activationRequest)
     }

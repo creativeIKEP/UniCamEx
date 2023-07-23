@@ -7,7 +7,5 @@
 		<key>CMIOExtensionMachServiceName</key>
 		<string>$(TeamIdentifierPrefix)$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	</dict>
-	<key>NSSystemExtensionUsageDescription</key>
-	<string></string>
 </dict>
 </plist>

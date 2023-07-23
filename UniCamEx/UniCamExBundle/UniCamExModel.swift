@@ -5,7 +5,6 @@ import os.log
 import SystemExtensions
 
 public class UniCamExModel {
-    public let VIRTUAL_CAMERA_NAME = "UniCamEx"
     private let textureConverter = MtlTextureToSampleBufferConverter(width: 1920, height: 1080)
     let uniCamExInstaller = UniCamExInstaller()
     
@@ -34,7 +33,7 @@ public class UniCamExModel {
     }
     
     private func setup(){
-        guard let cd = getCaptureDevice(name: VIRTUAL_CAMERA_NAME) else {
+        guard let cd = getCaptureDevice(name: UniCamExConfig.VIRTUAL_CAMERA_NAME) else {
             print("no capture device")
             return
         }
