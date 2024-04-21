@@ -6,10 +6,17 @@ namespace UniCamEx
     {
         [SerializeField] private bool isHorizontalFlip;
 
+        private UniCamExPlugin _uniCamExPlugin;
         private RenderTexture _sendRenderTexture;
+
+        private void Start()
+        {
+            _uniCamExPlugin = new UniCamExPlugin();
+        }
 
         private void OnRenderImage(RenderTexture source, RenderTexture destination)
         {
+#if UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
             if (_sendRenderTexture == null || _sendRenderTexture.width != source.width ||
                 _sendRenderTexture.height != source.height)
             {
@@ -21,9 +28,8 @@ namespace UniCamEx
             Graphics.Blit(source, tmp);
             Graphics.CopyTexture(tmp, _sendRenderTexture);
             RenderTexture.ReleaseTemporary(tmp);
-
-#if UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
-            UniCamExPlugin.Send(_sendRenderTexture, isHorizontalFlip);
+            
+            _uniCamExPlugin.Send(_sendRenderTexture, isHorizontalFlip);
 #endif
 
             Graphics.Blit(source, destination);
@@ -32,6 +38,7 @@ namespace UniCamEx
         private void OnDestroy()
         {
             Destroy(_sendRenderTexture);
+            _uniCamExPlugin.Dispose();
         }
     }
 }
