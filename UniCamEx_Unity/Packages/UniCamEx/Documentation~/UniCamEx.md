@@ -29,7 +29,7 @@ To the `scopedRegistries` section:
 ```
 To the `dependencies` section:
 ```
-"jp.ikep.unicamex": "1.1.0"
+"jp.ikep.unicamex": "1.2.0"
 ```
 Finally, the manifest file looks like below:
 ```
@@ -42,7 +42,7 @@ Finally, the manifest file looks like below:
         }
     ],
     "dependencies": {
-        "jp.ikep.unicamex": "1.1.0",
+        "jp.ikep.unicamex": "1.2.0",
         ...
     }
 }
@@ -51,13 +51,13 @@ Finally, the manifest file looks like below:
 ##### Install from GitHub URL 
 UniCamEx can be installed by adding below URL on the Unity Package Manager's window
 ```
-https://github.com/creativeIKEP/UniCamEx.git?path=UniCamEx_Unity/Packages/UniCamEx#v1.1.0
+https://github.com/creativeIKEP/UniCamEx.git?path=UniCamEx_Unity/Packages/UniCamEx#v1.2.0
 ```
 or, adding below sentence to your manifest file(`Packages/manifest.json`) `dependencies` block. Example is below.
 ```
 {
   "dependencies": {
-    "jp.ikep.unicamex": "https://github.com/creativeIKEP/UniCamEx.git?path=UniCamEx_Unity/Packages/UniCamEx#v1.1.0",
+    "jp.ikep.unicamex": "https://github.com/creativeIKEP/UniCamEx.git?path=UniCamEx_Unity/Packages/UniCamEx#v1.2.0",
     ...
   }
 }
@@ -66,7 +66,8 @@ or, adding below sentence to your manifest file(`Packages/manifest.json`) `depen
 
 #### 2. Send textures from Unity Editor
 You can send camera rendered images with adding a `UniCamExSender` component to camera in your scenes.
-Also, you can send textures using the `UniCamExPlugin.Send` method.
+If you want to send any video, you can do so by directly using the `UniCamExPlugin` class.
+Please refer to `UniCamExSender` class for usage instructions.
 
 #### 3. Install an Auxiliary app for UniCamEx
 Download `UniCamExExtensionInstaller.zip` for auxiliary app of UniCamEx from [release page](https://github.com/creativeIKEP/UniCamEx/releases/latest) and Open the zip file.
@@ -98,10 +99,12 @@ Copy `UniCamEx/UniCamEx_Unity/Packages/UniCamEx` directory to `<Your Unity Proje
 
 #### 3. Build UniCamEx Xcode Project with Your Custom Configuration.
 1. Open `UniCamEx/UniCamEx/UniCamEx.xcodeproj`.
-2. Change to your custom Bundle Identifier in `Extension` target, and sign in with your Apple developer account.
+2. Change to your custom Bundle Identifier in `Extension` target and the name of the App Groups in the `Extension` target.
+The name of the App Groups in the `Extension` target must start with the Bundle Identifier in the `Extension` target.
+Also, sign in with your Apple developer account.
 <img width="671" alt="3-2" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/b4d37c9a-1fb8-4b75-938d-f5081e58f432">
 
-3. Change to your custom configuration in  `UniCamEx/UniCamEx/UniCamEx/UniCamExConfig.swift`.
+3. Change to your custom configuration in  `UniCamEx/UniCamEx/UniCamExConfig.swift`.
 4. Set `Build Configuration` to `Release`, and build `Extension` and `UniCamExBundle` in targets.
 <img width="814" alt="3-4" src="https://github.com/creativeIKEP/UniCamEx/assets/34697515/80939423-c129-4140-82ca-5c14fd7e706d">
 

@@ -6,7 +6,7 @@
   "name": "jp.ikep.unicamex",
   "displayName": "UniCamEx",
   "description": "MacOS virtual camera for using Apple's camera extension with Core Media I/O.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "unity": "2022.3",
   "keywords": [
     "unity",
