@@ -20,14 +20,15 @@ namespace UniCamEx
             if (_sendRenderTexture == null || _sendRenderTexture.width != source.width ||
                 _sendRenderTexture.height != source.height)
             {
-                _sendRenderTexture = new RenderTexture(source.width, source.height, 0);
+                ReleaseTemporaryTexture(ref _sendRenderTexture);
+                _sendRenderTexture = RenderTexture.GetTemporary(source.width, source.height);
             }
 
             var tmp = RenderTexture.GetTemporary(_sendRenderTexture.width, _sendRenderTexture.height, 0,
                 RenderTextureFormat.Default, RenderTextureReadWrite.Default);
             Graphics.Blit(source, tmp);
             Graphics.CopyTexture(tmp, _sendRenderTexture);
-            RenderTexture.ReleaseTemporary(tmp);
+            ReleaseTemporaryTexture(ref tmp);
             
             _uniCamExPlugin.Send(_sendRenderTexture, isHorizontalFlip);
 #endif
@@ -37,8 +38,16 @@ namespace UniCamEx
 
         private void OnDestroy()
         {
-            Destroy(_sendRenderTexture);
+            ReleaseTemporaryTexture(ref _sendRenderTexture);
             _uniCamExPlugin.Dispose();
+        }
+        
+        private void ReleaseTemporaryTexture(ref RenderTexture tex)
+        {
+            if (tex != null)
+            {
+                RenderTexture.ReleaseTemporary(tex);
+            }
         }
     }
 }
